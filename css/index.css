@@ -19,9 +19,6 @@ body {
     top: 42%;
     transform: translate(-50%, -38%);
 }
-.container .title {
-    opacity: .3;
-}
 .container .title_error {
     font-size: calc(5vw + 5vh + 2em);
     line-height: calc(1vw + 2vh + 1em);
@@ -29,6 +26,9 @@ body {
 }
 .container .m-bottom {
     margin-bottom: .7em;
+}
+.container .opacity {
+    opacity: .3;
 }
 .container a {
     color: white;
