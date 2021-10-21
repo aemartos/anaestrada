@@ -24,6 +24,9 @@ body {
     line-height: calc(1vw + 2vh + 1em);
     margin-bottom: .1em
 }
+.container .m-top {
+    margin-top: .2em;
+}
 .container .m-bottom {
     margin-bottom: .7em;
 }
@@ -36,6 +39,23 @@ body {
 }
 .container a:hover {
     text-decoration: underline;
+}
+
+@keyframes fliker {
+    from, to {
+        border-bottom: none;
+    }
+    50% {
+        border-bottom: 5px solid black;
+    }
+}
+
+.container .underscore {
+    width: 20px;
+    display: inline-block;
+    animation: 1.5s fliker step-end infinite;
+    margin-left: 4px;
+    margin-bottom: -5px;
 }
 
 @media (max-width: 823px) and (orientation: landscape) {
