@@ -19,6 +19,13 @@ body {
     top: 42%;
     transform: translate(-50%, -38%);
 }
+.container .underscore {
+    width: 20px;
+    display: inline-block;
+    animation: 1.5s fliker step-end infinite;
+    margin-left: 4px;
+    margin-bottom: -5px;
+}
 .container .title_error {
     font-size: calc(5vw + 5vh + 2em);
     line-height: calc(1vw + 2vh + 1em);
@@ -36,6 +43,15 @@ body {
 }
 .container a:hover {
     text-decoration: underline;
+}
+
+@keyframes fliker {
+    from, to {
+        border-bottom: none;
+    }
+    50% {
+        border-bottom: 5px solid black;
+    }
 }
 
 @media (max-width: 823px) and (orientation: landscape) {
